@@ -1,11 +1,13 @@
-import './App.css';
 import QuoteGenerator from './components/quoteGenerator';
+import { ThemeProvider } from "@mui/material";
+import theme from "./styles";
+
 
 function App() {
   return (
-    <div>
+    <ThemeProvider theme={theme}>
       <QuoteGenerator />
-    </div>
+    </ThemeProvider>
   );
 }
 
